@@ -1,7 +1,7 @@
 const createName = () => {
   const letters = "ABCDEFGHIJKLMNOPQRSTUVXYZ";
   const numbers = "1234567890";
-  let nameRobot: string = "";
+  let nameRobot = "";
 
   const randomIndex = (n: number) => Math.floor(Math.random() * n);
 
