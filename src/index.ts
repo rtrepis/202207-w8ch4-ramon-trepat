@@ -1,7 +1,7 @@
 import "./loadEnvironment";
 import Debug from "debug";
-import createRobot from "./createRobot";
+import { CreateRobot } from "./createRobot";
 
 const debug = Debug("return");
 
-debug(createRobot());
+debug(CreateRobot("Cleaner"));
