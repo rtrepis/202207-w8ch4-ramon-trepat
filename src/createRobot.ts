@@ -1,5 +1,3 @@
-import { type } from "os";
-
 interface Robot {
   name: string;
   type: "Cleaner" | "Waiter" | "Developer";
