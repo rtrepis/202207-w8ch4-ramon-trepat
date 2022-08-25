@@ -1,17 +1,18 @@
-interface Robot {
+import createName from "./createName";
+
+export type TypeRebot = "Cleaner" | "Waiter" | "Developer";
+export interface Robot {
   name: string;
-  type: "Cleaner" | "Waiter" | "Developer";
+  type: TypeRebot;
   battery: number;
 }
 
-const createRobot = () => {
+export const CreateRobot = (sendRobot: TypeRebot) => {
   const robot: Robot = {
-    name: "tre234",
-    type: "Cleaner",
+    name: createName(),
+    type: sendRobot,
     battery: 100,
   };
 
   return robot;
 };
-
-export default createRobot;
