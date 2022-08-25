@@ -1,13 +1,13 @@
 import createName from "./createName";
 
-export type TypeRebot = "Cleaner" | "Waiter" | "Developer";
+export type TypeRobot = "Cleaner" | "Waiter" | "Developer";
 export interface Robot {
   name: string;
-  work: TypeRebot;
+  work: TypeRobot;
   battery: number;
 }
 
-export const CreateRobot = (sendRobot: TypeRebot) => {
+export const CreateRobot = (sendRobot: TypeRobot) => {
   const robot: Robot = {
     name: createName(),
     work: sendRobot,
